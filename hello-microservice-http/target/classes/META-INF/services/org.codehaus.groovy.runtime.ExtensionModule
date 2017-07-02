@@ -1,0 +1,7 @@
+moduleName = io.vertx.ext.web.handler.VirtualHostHandler-module
+moduleVersion = 1.0
+extensionClasses = io.vertx.groovy.ext.web.handler.sockjs.BridgeEvent_GroovyExtension, io.vertx.groovy.ext.web.handler.OAuth2AuthHandler_GroovyExtension, io.vertx.groovy.ext.web.RoutingContext_GroovyExtension, io.vertx.groovy.ext.web.Session_GroovyExtension, io.vertx.groovy.ext.web.handler.sockjs.SockJSHandler_GroovyExtension
+staticExtensionClasses = io.vertx.groovy.ext.web.handler.sockjs.SockJSHandler_GroovyStaticExtension
+moduleName = io.vertx.ext.auth.User-module
+extensionClasses = io.vertx.groovy.ext.auth.AuthProvider_GroovyExtension, io.vertx.groovy.ext.auth.User_GroovyExtension
+staticExtensionClasses = 
