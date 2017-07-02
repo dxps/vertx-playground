@@ -1,6 +1,6 @@
-## Client of `hello-microservice-http` service
+## Vert.x > `hello-microservice-http-client`
 
-This is the client of `hello-microservice-http` service whose project is also part of this playground.
+This is the client of `hello-microservice-http` service, both of them being part of this playground.
 
 ### About
 
