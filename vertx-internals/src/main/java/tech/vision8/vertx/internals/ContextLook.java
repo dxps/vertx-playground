@@ -14,13 +14,15 @@ public class ContextLook {
 		for (int i = 0; i < 20; i++) {
 			int index = i;
 			vertx.setTimer(1, timerID -> {
-				System.out.println(index + ":" + Thread.currentThread());
+				Thread currentThread = Thread.currentThread();
+				System.out.println(
+						String.format("%2d:\t thread name: %s  \t id: %d", index, currentThread.getName(), currentThread.getId()));
 			});
 		}
 		
 		// used just to end the execution
 		vertx.close();
-	
+		
 	}
 	
 }
