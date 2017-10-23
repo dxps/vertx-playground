@@ -1,0 +1,7 @@
+/*C8*/SET SCHEMA PUBLIC
+create table if not exists Pages (Id integer identity primary key, Name varchar(255) unique, Content clob)
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C7*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/DISCONNECT
