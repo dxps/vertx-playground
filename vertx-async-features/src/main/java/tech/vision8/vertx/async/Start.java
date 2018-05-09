@@ -27,14 +27,14 @@ public class Start extends AbstractVerticle {
 
                     switch (checkType) {
                         case B:
-                            logger.debug("Collecting the state (using a blocking call)", checkType);
+                            logger.debug("Collecting the state (synchronously, using blocking call)", checkType);
                             state.copyFrom(stateCollector.isHealthyUsingBlocking());
                             req.response()
                                     .putHeader("content-type", "text/plain")
                                     .end(state.toString());
                             break;
                         case ARH:
-                            logger.debug("Collecting the state (using an AsyncResult Handler)", checkType);
+                            logger.debug("Collecting the state (asynchronously, using an AsyncResult Handler)", checkType);
 
                             // The proof that async does not mean non-blocking!!!
                             // stateCollector.isHealthyUsingAsyncResultHandler(ar -> state.copyFrom(ar.result()));
