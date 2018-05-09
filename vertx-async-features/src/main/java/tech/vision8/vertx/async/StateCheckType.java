@@ -6,10 +6,25 @@ package tech.vision8.vertx.async;
  */
 public enum StateCheckType {
 
+    /** Blocking way */
     B,
 
+    /** NonBlocking way */
+    NB,
+
+    /** using AsyncResult Handler */
     ARH,
 
-    F
+    /** using Future */
+    F,
+
+    /** using the event bus, option 1: one verticle of type non worker (standard) **/
+    EB_1NW,
+
+    /** using event bus, option 2: two verticles of type non worker (standard) */
+    EB_2NW,
+
+    /** using event bus, option 3: two verticles of type worker */
+    EB_2W
 
 }
