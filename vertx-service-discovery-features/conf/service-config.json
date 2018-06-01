@@ -1,0 +1,12 @@
+{
+
+    "eventbus": {
+        "provider1Address": "provider1"
+    },
+
+    "webApi": {
+        "httpPort": 8082,
+        "verticles": 1
+    }
+
+}
