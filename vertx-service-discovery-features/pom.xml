@@ -10,7 +10,7 @@
 
     <properties>
 
-        <vertx.version>3.5.1</vertx.version>
+        <vertx.version>3.9.3</vertx.version>
         <vertx-maven-plugin.version>1.0.15</vertx-maven-plugin.version>
         <vertx.verticle>tech.vision8.vertx.discovery.Start</vertx.verticle>
 
